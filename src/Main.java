@@ -19,7 +19,7 @@ public class Main {
                 int add1 = scn.nextInt();
                 int add2 = scn.nextInt();
 
-                System.out.println("hey the result of addition is - "+ add1+add2);
+                System.out.println("hey the result of addition is - "+ (add1 + add2));
             }
             if(n1 == 2){
                 System.out.println("please enter 2 numbers for subtraction.");
