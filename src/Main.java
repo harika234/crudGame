@@ -44,7 +44,7 @@ public class Main {
                 }
             }
             System.out.println("enter operation to perform");
-//            printOperations();
+            printOperations();
             n1 = scn.nextInt();
         }
         System.out.println("GAME IS OVER  quit...quit....quit.....");
