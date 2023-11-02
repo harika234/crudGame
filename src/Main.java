@@ -3,14 +3,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         System.out.println("Hi what is your name");
-        String s1 = scn.next();
-        System.out.println("Hi "+s1+" which operation do you perform?");
-        System.out.println("+ addition");
-        System.out.println("-Subtraction");
-        System.out.println("* multiplication");
-        System.out.println("/ Division");
-        System.out.println("Note - for addition click 1 , for subtraction click 2 , for multiplication click 3," +
-                "for division click 4 , to exit click 0.....");
+        String name = scn.next();
+        System.out.println("Hi "+ name +" which operation do you perform?");
+        printOperations();
 
         int n1 = scn.nextInt();
         while(n1!=0) {
@@ -40,7 +35,7 @@ public class Main {
                 else{
                     result = mul2*mul1;
                 }
-                System.out.println("hey the result of addition is - "+ result);
+                System.out.println("hey the result of multiplication is "+ result);
             }
 
             if(n1 == 4) {
@@ -50,11 +45,11 @@ public class Main {
                 int result  = 0;
                 if(div1>0 && div2>0) {
                     result = div1/div2;
-                    System.out.println("hey the result of division  is - "+ result);
+                    System.out.println("hey the result of division  is "+ result);
                 }
                 if(div1 == 0) {
                     result = 0;
-                    System.out.println("hey the result of division  is - "+ result);
+                    System.out.println("hey the result of division  is "+ result);
                 }
                 if(div2 == 0) {
                     System.out.println("the result is undefined!!");
@@ -62,8 +57,18 @@ public class Main {
 
             }
             System.out.println("enter operation to perform");
+            printOperations();
             n1 = scn.nextInt();
         }
         System.out.println("GAME IS OVER  quit...quit....quit.....");
+    }
+
+    public static void printOperations() {
+        System.out.println("+ addition");
+        System.out.println("- subtraction");
+        System.out.println("* multiplication");
+        System.out.println("/ division");
+        System.out.println("Note - for addition click 1 , for subtraction click 2 , for multiplication click 3," +
+                "for division click 4 , to exit click 0.....");
     }
 }
