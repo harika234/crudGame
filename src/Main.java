@@ -20,7 +20,7 @@ public class Main {
                 System.out.println("please enter 2 numbers for subtraction.");
                 int sub1 = scn.nextInt();
                 int sub2 = scn.nextInt();
-                int result = Math.abs(sub1 - sub2);
+                int result = Math.abs(sub1-sub2);
                 System.out.println("hey the result of subtraction is "+ result);
             }
 
