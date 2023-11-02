@@ -8,41 +8,49 @@ public class Main {
         printOperations();
 
         int n1 = scn.nextInt();
-        while(n1 != 0) {
-            if(n1 == 1){
-                System.out.println("please enter 2 numbers for addition.");
-                int add1 = scn.nextInt();
-                int add2 = scn.nextInt();
-                int result = add1+add2;
-                System.out.println("hey the result of addition is - "+ result);
-            }
-            if(n1 == 2){
-                System.out.println("please enter 2 numbers for subtraction.");
-                int sub1 = scn.nextInt();
-                int sub2 = scn.nextInt();
-                int result = Math.abs(sub1-sub2);
-                System.out.println("hey the result of subtraction is "+ result);
-            }
+        while (n1 != 0) {
+            switch (n1) {
+                case 1 -> {
+                    System.out.println("please enter 2 numbers for addition.");
+                    int add1 = scn.nextInt();
+                    int add2 = scn.nextInt();
+                    int result = add1+add2;
+                    System.out.println("hey the result of addition is - "+ result);
+                }
 
-            if(n1 == 3) {
-                System.out.println("please enter 2 numbers for Multiplication.");
-                int mul1 = scn.nextInt();
-                int mul2 = scn.nextInt();
-                int result = mul1 * mul2;
-                System.out.println("hey the result of multiplication is "+ result);
-            }
+                case 2 -> {
+                    System.out.println("please enter 2 numbers for subtraction.");
+                    int sub1 = scn.nextInt();
+                    int sub2 = scn.nextInt();
+                    int result = Math.abs(sub1-sub2);
+                    System.out.println("hey the result of subtraction is "+ result);
+                }
 
-            if(n1 == 4) {
-                System.out.println("please enter 2 numbers for division.");
-                int div1 = scn.nextInt();
-                int div2 = scn.nextInt();
-                if(div2 == 0) {
-                    System.out.println("the result is undefined!!");
-                } else {
-                    int result = div1 / div2;
-                    System.out.println("hey the result of division  is "+ result);
+                case 3 -> {
+                    System.out.println("please enter 2 numbers for Multiplication.");
+                    int mul1 = scn.nextInt();
+                    int mul2 = scn.nextInt();
+                    int result = mul1 * mul2;
+                    System.out.println("hey the result of multiplication is "+ result);
+                }
+
+                case 4 -> {
+                    System.out.println("please enter 2 numbers for division.");
+                    int div1 = scn.nextInt();
+                    int div2 = scn.nextInt();
+                    if(div2 == 0) {
+                        System.out.println("the result is undefined!!");
+                    } else {
+                        int result = div1 / div2;
+                        System.out.println("hey the result of division  is "+ result);
+                    }
+                }
+
+                default -> {
+                    System.out.println("Option invalid, please choose between 0 to 4");
                 }
             }
+
             System.out.println("enter operation to perform");
             printOperations();
             n1 = scn.nextInt();
