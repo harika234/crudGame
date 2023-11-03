@@ -23,8 +23,9 @@ public class Numbergame {
         System.out.println("Your Name Please ....!");
         String name = scn.next();
         System.out.println("WELCOME "+ name + " lets play a game excited??? ok then guess a random number i will check with mine");
-        while(guess<=10){
-            int input = scn.nextInt();
+        int input = scn.nextInt();
+        while(guess<11){
+
 
             if(input == a) {
 
