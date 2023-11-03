@@ -57,7 +57,6 @@ public class Main {
                 break;
         }
     }
-
     public static void performAddition(Scanner scn) {
         System.out.println("Please enter 2 numbers for addition.");
         int add1 = scn.nextInt();
@@ -86,7 +85,6 @@ public class Main {
         System.out.println("Please enter 2 numbers for division.");
         int div1 = scn.nextInt();
         int div2 = scn.nextInt();
-
         if (div2 == 0) {
             System.out.println("The result is undefined!");
         } else {
