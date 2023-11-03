@@ -32,8 +32,8 @@ public class Numbergame {
             if(input == a) {
 
                 System.out.println("Hey "+ name + " It's Celebrations Time You Won It... KUDOOS");
-                System.out.println("You still have " + (chances-guess)+ "remaining chances WELL DONE!!!" );
-
+                System.out.println("You still have " + (chances-guess)+ "remaining chances WELL DONE!!! Quitting the Game" );
+                break;
             }
             else{
                 if(input < a) {
