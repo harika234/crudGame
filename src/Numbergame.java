@@ -16,15 +16,14 @@ public class Numbergame {
         int max = 100;
 
         int a = min + (int)(Math.random() * ((max - min) + 1));
+        System.out.println(a);
         int chances = 10;
         int guess = 1;
         int remainingchances = 0;
         System.out.println("Your Name Please ....!");
         String name = scn.next();
+        System.out.println("WELCOME "+ name + " lets play a game excited??? ok then guess a random number i will check with mine");
         while(guess<=10){
-
-            System.out.println("WELCOME "+ name + " lets play a game excited??? ok then guess a random number i will check with mine");
-
             int input = scn.nextInt();
 
             if(input == a) {
@@ -33,7 +32,7 @@ public class Numbergame {
 //                System.out.println("hey do u want to play again" );
                 remainingchances = chances-guess;
 //                System.out.println("You still have " + remainingchances + "remaining chances WELL DONE!!!" );
-                System.out.println("quit quit quit");
+                break;
 
             }
             else{
@@ -52,6 +51,11 @@ public class Numbergame {
             }
             guess++;
         }
-        System.out.println("Sorry u lost the game " );
+        if(remainingchances == 0) {
+            System.out.println("you lost the game");
+        }
+        else{
+            System.out.println("game over");
+        }
     }
 }
