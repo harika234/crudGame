@@ -19,41 +19,40 @@ public class Numbergame {
         System.out.println(a);
         int chances = 10;
         int guess = 1;
-        int remainingchances = 0;
+
         System.out.println("Your Name Please ....!");
         String name = scn.next();
         System.out.println("WELCOME "+ name + " lets play a game excited??? ok then guess a random number i will check with mine");
         int input = scn.nextInt();
-        while(guess<11){
+        while(guess<chances){
 
 
             if(input == a) {
 
                 System.out.println("Hey "+ name + " YOU WON IT KUDOOS");
 //                System.out.println("hey do u want to play again" );
-                remainingchances = chances-guess;
-//                System.out.println("You still have " + remainingchances + "remaining chances WELL DONE!!!" );
+
+                System.out.println("You still have " + (chances-guess)+ "remaining chances WELL DONE!!!" );
                 break;
 
             }
             else{
-
-                remainingchances = chances-guess;
                 if(input < a) {
-                    System.out.println("your guess number is less than mine..Still have "+ remainingchances +"chances");
+                    System.out.println("your guess number is less than mine..Still have "+ (chances-guess) +"chances");
                     System.out.println("PLEASE TRY AGAIN");
-                    input = scn.nextInt();
+
                 }
                 if(input > a) {
-                    System.out.println("your guess number is greater than mine...think once again!!");
-                    System.out.println("still have " + remainingchances+" chances no worries TRY AGAIN");
-                    input = scn.nextInt();
+                    System.out.println("your guess number is greater than mine..Still have "+ (chances-guess) +"chances");
+                    System.out.println("PLEASE TRY AGAIN");
+
                 }
             }
+            input = scn.nextInt();
             guess++;
         }
-        if(remainingchances == 0) {
-            System.out.println("you lost the game");
+        if(chances==guess) {
+            System.out.println(" Sorry No chances you lost the game");
         }
         else{
             System.out.println("game over");
