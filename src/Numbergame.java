@@ -22,18 +22,17 @@ public class Numbergame {
 
         System.out.println("Your Name Please ....!");
         String name = scn.next();
-        System.out.println("WELCOME "+ name + " lets play a game excited??? ok then guess a random number i will check with mine");
+        System.out.println("WELCOME "+ name + " lets play a game are you ready ???ok then guess a random number " +
+                "between 1 - 100 if u guess correctly you win else you loose!");
+        System.out.println("I ll give you 10 chances let's try !");
         int input = scn.nextInt();
         while(guess<chances){
 
 
             if(input == a) {
 
-                System.out.println("Hey "+ name + " YOU WON IT KUDOOS");
-//                System.out.println("hey do u want to play again" );
-
+                System.out.println("Hey "+ name + " It's Celebrations Time You Won It... KUDOOS");
                 System.out.println("You still have " + (chances-guess)+ "remaining chances WELL DONE!!!" );
-                break;
 
             }
             else{
@@ -54,8 +53,16 @@ public class Numbergame {
         if(chances==guess) {
             System.out.println(" Sorry No chances you lost the game");
         }
-        else{
-            System.out.println("game over");
-        }
+
     }
 }
+
+
+
+
+
+
+
+
+
+
