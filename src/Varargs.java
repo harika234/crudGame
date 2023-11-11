@@ -1,5 +1,5 @@
 public class Varargs {
-    public static void main(String... args) {
+    final static synchronized strictfp public void main(String... harry) {
 //        sum();
 //        sum(1,2,3);
 //        sum(40,-74,85);
