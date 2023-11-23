@@ -1,3 +1,5 @@
+package Fundamentals;
+
 public class Varargs {
     final static synchronized strictfp public void main(String... harry) {
 //        sum();
