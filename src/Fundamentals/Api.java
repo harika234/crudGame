@@ -10,7 +10,7 @@ public class Api {
     public static void main(String[] args) throws IOException, InterruptedException {
         Scanner scn = new Scanner(System.in);
         String name = scn.nextLine();
-        String apikey = "1069d1c5349798d4f37c8acdfe4cdae1";
+
         String url = "https://api.openweathermap.org/data/2.5/weather?q="+name+"&appid="+apikey;
         HttpRequest request = HttpRequest.newBuilder().GET().uri(URI.create(url)).build();
         HttpClient client = HttpClient.newBuilder().build();

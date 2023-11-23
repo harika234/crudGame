@@ -59,5 +59,4 @@ public class PwdGenerator {
             return  (char) (ascii);
         }
     }
-
 }
