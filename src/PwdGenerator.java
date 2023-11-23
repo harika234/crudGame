@@ -40,7 +40,8 @@ public class PwdGenerator {
 
     public static char randomCharacter() {
 
-        int rand = (int) Math.random()*62;
+//        int rand = (int) Math.random()*62;
+        int rand = (int) (Math.random() * 62);
 
         if(rand<=9) {
             // number(0-9) --->> 48-57 in ASCII
